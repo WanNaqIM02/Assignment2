@@ -4,22 +4,53 @@
         <meta charset="utf-8"/>
         <title>Savings Calculator</title>
         <link href="style.css" rel = "stylesheet" />
+        <script type = "text/javascript"src="https://www.gstatic.com/charts/loader.js"></script>
         
     </head>
     <body>
         <h1 class= "maintitle">Check your savings!</h1>
         <div class = "container">
-          <form>
-            <label for="transport" class = "transportlabel">Transport</label><br>
-            <input type ="text" id = "inputTR" class = "inputtransport"><br>
-            <label for = "food"  class = "foodlabel">Food</label><br>
-            <input type ="text"  id = "inputFD" class = "inputfood"><br>
-            <label for = "miscellaneous"  class = "miscellaneouslabel">Miscellaneous</label><br>
-            <input type ="text"  id = "inputMISC" class = "inputmisc"><br>
-            <input type="submit" value='Submit' id="SubmitBtn" class="submitbtn">
+          <form id = "form1" onsubmit="drawChart(); return false">
+            <label class = "day">Monday</label><br>
+            <label for = "allowanceMon">Allowance: </label><input type = "text" id = "allowanceMon"><br>
+            <label for = "transportMon">Transport: </label><input type = "text" id = "transportMon"><br>
+            <label for = "foodMon">Food: </label><input type = "text" id = "foodMon"><br>
+            <label for = "miscMon">Miscellaneous: </label><input type = "text" id = "miscMon">
+            
+            <label class = "day">Tuesday</label><br>
+            <label for = "allowanceTues">Allowance: </label><input type = "text" id = "allowanceTues"><br>
+            <label for = "transportTues">Transport: </label><input type = "text" id = "transportTues"><br>
+            <label for = "foodTues">Food: </label><input type = "text" id = "foodTues"><br>
+            <label for = "miscTues">Miscellaneous: </label><input type = "text" id = "miscTues">
+
+            <label class = "day">Wednesday</label><br>
+            <label for = "allowanceWed">Allowance: </label><input type = "text" id = "allowanceWed"><br>
+            <label for = "transportWed">Transport: </label><input type = "text" id = "transportWed"><br>
+            <label for = "foodWed">Food: </label><input type = "text" id = "foodWed"><br>
+            <label for = "miscWed">Miscellaneous: </label><input type = "text" id = "miscWed">
+            
+            <label class = "day">Thursday</label><br>
+            <label for = "allowanceThu">Allowance: </label><input type = "text" id = "allowanceThu"><br>
+            <label for = "transportThu">Transport: </label><input type = "text" id = "transportThu"><br>
+            <label for = "foodThu">Food: </label><input type = "text" id = "foodThu"><br>
+            <label for = "miscThu">Miscellaneous: </label><input type = "text" id = "miscThu">
+            
+            <label class = "day">Friday</label><br>
+            <label for = "allowanceFri">Allowance: </label><input type = "text" id = "allowanceFri"><br>
+            <label for = "transportFri">Transport: </label><input type = "text" id = "transportFri"><br>
+            <label for = "foodFri">Food: </label><input type = "text" id = "foodFri"><br>
+            <label for = "miscFri">Miscellaneous: </label><input type = "text" id = "miscFri">
+            
+            <select id = "chartType">
+              <option value = "PieChart">Pie Chart</option>
+              <option value = "BarChart">Bar Chart</option>
+              <option value = "ColumnChart">Column Chart</option>
+            </select>
+            <button type = "submit" value = "Submit">Submit</button>
           </form>
-          <script src ="script.js"></script>
         </div>
+        <div id = "chart"></div>
+        <script src ="script.js"></script>
     </body>
     
 </html>

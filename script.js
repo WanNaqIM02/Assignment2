@@ -1,48 +1,49 @@
 google.charts.load('current',{'packages':['corechart'], callback: drawChart});
 
 function drawChart(){
-    allowanceMonday = parseInt(document.getElementById('allowanceMon').value);
-    transportMonday = parseInt(document.getElementById('transportMon').value);
-    foodMonday = parseInt(document.getElementById('foodMon').value);
-    miscellaneousMonday = parseInt(document.getElementById('miscMon').value);
+    allowanceMonday = parseFloat(document.getElementById('allowanceMon').value);
+    transportMonday = parseFloat(document.getElementById('transportMon').value);
+    foodMonday = parseFloat(document.getElementById('foodMon').value);
+    miscellaneousMonday = parseFloat(document.getElementById('miscMon').value);
     savingsMonday = allowanceMonday - transportMonday - foodMonday - miscellaneousMonday;
 
-    allowanceTuesday = parseInt(document.getElementById('allowanceTues').value);
-    transportTuesday = parseInt(document.getElementById('transportTues').value);
-    foodTuesday = parseInt(document.getElementById('foodTues').value);
-    miscellaneousTuesday = parseInt(document.getElementById('miscTues').value);
+    allowanceTuesday = parseFloat(document.getElementById('allowanceTues').value);
+    transportTuesday = parseFloat(document.getElementById('transportTues').value);
+    foodTuesday = parseFloat(document.getElementById('foodTues').value);
+    miscellaneousTuesday = parseFloat(document.getElementById('miscTues').value);
     savingsTuesday = allowanceTuesday - transportTuesday - foodTuesday - miscellaneousTuesday;
 
-    allowanceWednesday = parseInt(document.getElementById('allowanceWed').value);
-    transportWednesday = parseInt(document.getElementById('transportWed').value);
-    foodWednesday = parseInt(document.getElementById('foodWed').value);
-    miscellaneousWednesday = parseInt(document.getElementById('miscWed').value);
+    allowanceWednesday = parseFloat(document.getElementById('allowanceWed').value);
+    transportWednesday = parseFloat(document.getElementById('transportWed').value);
+    foodWednesday = parseFloat(document.getElementById('foodWed').value);
+    miscellaneousWednesday = parseFloat(document.getElementById('miscWed').value);
     savingsWednesday = allowanceWednesday - transportWednesday - foodWednesday - miscellaneousWednesday;
 
-    allowanceThursday = parseInt(document.getElementById('allowanceThu').value);
-    transportThursday = parseInt(document.getElementById('transportThu').value);
-    foodThursday = parseInt(document.getElementById('foodThu').value);
-    miscellaneousThursday = parseInt(document.getElementById('miscThu').value);
+    allowanceThursday = parseFloat(document.getElementById('allowanceThu').value);
+    transportThursday = parseFloat(document.getElementById('transportThu').value);
+    foodThursday = parseFloat(document.getElementById('foodThu').value);
+    miscellaneousThursday = parseFloat(document.getElementById('miscThu').value);
     savingsThursday = allowanceThursday - transportThursday - foodThursday - miscellaneousThursday;
 
-    allowanceFriday = parseInt(document.getElementById('allowanceFri').value);
-    transportFriday = parseInt(document.getElementById('transportFri').value);
-    foodFriday = parseInt(document.getElementById('foodFri').value);
-    miscellaneousFriday = parseInt(document.getElementById('miscFri').value);
+    allowanceFriday = parseFloat(document.getElementById('allowanceFri').value);
+    transportFriday = parseFloat(document.getElementById('transportFri').value);
+    foodFriday = parseFloat(document.getElementById('foodFri').value);
+    miscellaneousFriday = parseFloat(document.getElementById('miscFri').value);
     savingsFriday = allowanceFriday - transportFriday - foodFriday - miscellaneousFriday;
     
     
     var data = new google.visualization.arrayToDataTable([
         ['Day' , 'Savings'],
-        ['Monday', savingsMonday],
+        ['Monday',  savingsMonday],
         ['Tuesday', savingsTuesday],
         ['Wednesday', savingsWednesday],
-        ['Thursday', savingsThursday],
+        ['Thursday',  savingsThursday],
         ['Friday', savingsFriday]
     ]);
 
     var options ={
-        title: 'Savings'
+        title: 'Savings',
+        height: 500
     };
 
 

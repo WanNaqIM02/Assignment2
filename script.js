@@ -43,7 +43,10 @@ function drawChart(){
 
     var options ={
         title: 'Savings',
-        height: 500
+        height: 500,
+        legend:{
+            alignment: 'center'
+        }
     };
 
 
@@ -51,3 +54,8 @@ function drawChart(){
     var chart =  new google.visualization[chartType](document.getElementById('chart'));
     chart.draw(data , options);
 }
+
+function toggleDarkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+  }

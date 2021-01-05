@@ -1,3 +1,13 @@
+
+body{
+    background-color: #fffffc;
+}
+
+.dark-mode{
+    background-color: #343a40;
+    color: #fffffc;
+}
+
 .maintitle{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
@@ -5,36 +15,34 @@
 }
 .day{
     font-weight: bold;
-    padding: 20em;
 }
 .chartdiv{
-   display: inline-block;
-   margin: 18em;
-   width: 1200px;
-   height: auto;
-   margin-top: 2em;
-   margin-bottom:2em;
+   display: flex;
+   width: 1500px;
+   margin: auto;
+   justify-content: center;
 }
 
 .container{
     display: flex;
     flex-direction: wrap;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     border-radius: 10px;
-    background-color: #759eb8;
+    background-color: #3185FC;
+    text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.5em;
-    width: 1200px;
+    width: 400px;
     height: auto;
     margin:auto;
     margin-top: 1em;
     margin-bottom:1em;
-    padding: 1em;
+    padding: 2em;
 }
 
-input[type= text], select, textarea{
-    width: 100%;
+input[type= text], textarea{
+    width: 40%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -42,9 +50,10 @@ input[type= text], select, textarea{
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+
 }
 
-button[type=submit]{
+button{
     padding: 12px 20px;
     border: none;
     border-radius: 10px;
@@ -52,4 +61,21 @@ button[type=submit]{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
 }
+
+input{
+    width: auto;
+}
+
+select{
+    width: 60%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+ 
+}
+
 

@@ -11,42 +11,63 @@
         <h1 class= "maintitle">Check your savings!</h1>
         <div class = "container">
           <form id = "form1" onsubmit="drawChart(); return false">
-            <label class = "day">Monday</label><br>
-            <label for = "allowanceMon">Allowance: </label><input type = "text" id = "allowanceMon"><br>
-            <label for = "transportMon">Transport: </label><input type = "text" id = "transportMon"><br>
-            <label for = "foodMon">Food: </label><input type = "text" id = "foodMon"><br>
-            <label for = "miscMon">Miscellaneous: </label><input type = "text" id = "miscMon">
+            <label class = "day">Monday</label><br><br>
+            <label for = "allowanceMon">Allowance: </label><br>
+            <input type = "text" id = "allowanceMon"><br>
+            <label for = "transportMon">Transport: </label><br>
+            <input type = "text" id = "transportMon"><br>
+            <label for = "foodMon">Food: </label><br>
+            <input type = "text" id = "foodMon"><br>
+            <label for = "miscMon">Miscellaneous: </label><br>
+            <input type = "text" id = "miscMon"><br><br>
             
-            <label class = "day">Tuesday</label><br>
-            <label for = "allowanceTues">Allowance: </label><input type = "text" id = "allowanceTues"><br>
-            <label for = "transportTues">Transport: </label><input type = "text" id = "transportTues"><br>
-            <label for = "foodTues">Food: </label><input type = "text" id = "foodTues"><br>
-            <label for = "miscTues">Miscellaneous: </label><input type = "text" id = "miscTues">
+            <label class = "day">Tuesday</label><br><br>
+            <label for = "allowanceTues">Allowance: </label><br>
+            <input type = "text" id = "allowanceTues"><br>
+            <label for = "transportTues">Transport: </label><br>
+            <input type = "text" id = "transportTues"><br>
+            <label for = "foodTues">Food: </label><br>
+            <input type = "text" id = "foodTues"><br>
+            <label for = "miscTues">Miscellaneous: </label><br>
+            <input type = "text" id = "miscTues"><br><br>
 
-            <label class = "day">Wednesday</label><br>
-            <label for = "allowanceWed">Allowance: </label><input type = "text" id = "allowanceWed"><br>
-            <label for = "transportWed">Transport: </label><input type = "text" id = "transportWed"><br>
-            <label for = "foodWed">Food: </label><input type = "text" id = "foodWed"><br>
-            <label for = "miscWed">Miscellaneous: </label><input type = "text" id = "miscWed">
+            <label class = "day">Wednesday</label><br><br>
+            <label for = "allowanceWed">Allowance: </label><br>
+            <input type = "text" id = "allowanceWed"><br>
+            <label for = "transportWed">Transport: </label><br>
+            <input type = "text" id = "transportWed"><br>
+            <label for = "foodWed">Food: </label>
+            <br><input type = "text" id = "foodWed"><br>
+            <label for = "miscWed">Miscellaneous: </label><br>
+            <input type = "text" id = "miscWed"><br><br>
             
-            <label class = "day">Thursday</label><br>
-            <label for = "allowanceThu">Allowance: </label><input type = "text" id = "allowanceThu"><br>
-            <label for = "transportThu">Transport: </label><input type = "text" id = "transportThu"><br>
-            <label for = "foodThu">Food: </label><input type = "text" id = "foodThu"><br>
-            <label for = "miscThu">Miscellaneous: </label><input type = "text" id = "miscThu">
+            <label class = "day">Thursday</label><br><br>
+            <label for = "allowanceThu">Allowance: </label><br>
+            <input type = "text" id = "allowanceThu"><br>
+            <label for = "transportThu">Transport: </label><br>
+            <input type = "text" id = "transportThu"><br>
+            <label for = "foodThu">Food: </label><br>
+            <input type = "text" id = "foodThu"><br>
+            <label for = "miscThu">Miscellaneous: </label><br>
+            <input type = "text" id = "miscThu"><br><br>
             
-            <label class = "day">Friday</label><br>
-            <label for = "allowanceFri">Allowance: </label><input type = "text" id = "allowanceFri"><br>
-            <label for = "transportFri">Transport: </label><input type = "text" id = "transportFri"><br>
-            <label for = "foodFri">Food: </label><input type = "text" id = "foodFri"><br>
-            <label for = "miscFri">Miscellaneous: </label><input type = "text" id = "miscFri">
+            <label class = "day">Friday</label><br><br>
+            <label for = "allowanceFri">Allowance: </label><br>
+            <input type = "text" id = "allowanceFri"><br>
+            <label for = "transportFri">Transport: </label><br>
+            <input type = "text" id = "transportFri"><br>
+            <label for = "foodFri">Food: </label><br>
+            <input type = "text" id = "foodFri"><br>
+            <label for = "miscFri">Miscellaneous: </label><br>
+            <input type = "text" id = "miscFri"><br>
             
             <select id = "chartType">
               <option value = "PieChart">Pie Chart</option>
               <option value = "BarChart">Bar Chart</option>
               <option value = "ColumnChart">Column Chart</option>
-            </select>
+            </select><br>
             <button type = "submit" value = "Submit">Submit</button>
+            <button type ="button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
           </form>
         </div>
         <div id = "chart" class = "chartdiv"></div>

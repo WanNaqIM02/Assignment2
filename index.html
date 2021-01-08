@@ -9,67 +9,97 @@
     </head>
     <body>
         <h1 class= "maintitle">Check your savings!</h1>
-        <div class = "container">
-          <form id = "form1" onsubmit="drawChart(); return false">
-            <label class = "day">Monday</label><br><br>
-            <label for = "allowanceMon">Allowance: </label><br>
-            <input type = "text" id = "allowanceMon"><br>
-            <label for = "transportMon">Transport: </label><br>
-            <input type = "text" id = "transportMon"><br>
-            <label for = "foodMon">Food: </label><br>
-            <input type = "text" id = "foodMon"><br>
-            <label for = "miscMon">Miscellaneous: </label><br>
-            <input type = "text" id = "miscMon"><br><br>
-            
-            <label class = "day">Tuesday</label><br><br>
-            <label for = "allowanceTues">Allowance: </label><br>
-            <input type = "text" id = "allowanceTues"><br>
-            <label for = "transportTues">Transport: </label><br>
-            <input type = "text" id = "transportTues"><br>
-            <label for = "foodTues">Food: </label><br>
-            <input type = "text" id = "foodTues"><br>
-            <label for = "miscTues">Miscellaneous: </label><br>
-            <input type = "text" id = "miscTues"><br><br>
-
-            <label class = "day">Wednesday</label><br><br>
-            <label for = "allowanceWed">Allowance: </label><br>
-            <input type = "text" id = "allowanceWed"><br>
-            <label for = "transportWed">Transport: </label><br>
-            <input type = "text" id = "transportWed"><br>
-            <label for = "foodWed">Food: </label>
-            <br><input type = "text" id = "foodWed"><br>
-            <label for = "miscWed">Miscellaneous: </label><br>
-            <input type = "text" id = "miscWed"><br><br>
-            
-            <label class = "day">Thursday</label><br><br>
-            <label for = "allowanceThu">Allowance: </label><br>
-            <input type = "text" id = "allowanceThu"><br>
-            <label for = "transportThu">Transport: </label><br>
-            <input type = "text" id = "transportThu"><br>
-            <label for = "foodThu">Food: </label><br>
-            <input type = "text" id = "foodThu"><br>
-            <label for = "miscThu">Miscellaneous: </label><br>
-            <input type = "text" id = "miscThu"><br><br>
-            
-            <label class = "day">Friday</label><br><br>
-            <label for = "allowanceFri">Allowance: </label><br>
-            <input type = "text" id = "allowanceFri"><br>
-            <label for = "transportFri">Transport: </label><br>
-            <input type = "text" id = "transportFri"><br>
-            <label for = "foodFri">Food: </label><br>
-            <input type = "text" id = "foodFri"><br>
-            <label for = "miscFri">Miscellaneous: </label><br>
-            <input type = "text" id = "miscFri"><br>
-            
-            <select id = "chartType">
-              <option value = "PieChart">Pie Chart</option>
-              <option value = "BarChart">Bar Chart</option>
-              <option value = "ColumnChart">Column Chart</option>
-            </select><br>
-            <button type = "submit" value = "Submit">Submit</button>
-            <button type ="button" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-          </form>
+        
+        
+        <div class = "header">
+          <a>History</a>
+          <div class = "switch container">
+          <p>Toggle theme</p>
+          <label id="switch" class="switch">
+            <input type="checkbox" onchange="switchTheme()" id="slider">
+            <span class="slider radius"></span>
+          </label>
+          </div>
         </div>
+          <form id = "form1" onsubmit="drawChart(); return false">
+            <div class = "firstcontainer">
+              <div class = "subcontainer">
+                <label class = "title">Monday</label><br>
+                <label for = "allowanceMon">Allowance: </label>
+                <input type = "number" step = "0.01" id = "allowanceMon" placeholder="$0.00"><br>
+                <label for = "transportMon">Transport: </label>
+                <input type = "number" step = "0.01" id = "transportMon" placeholder="$0.00"><br>
+                <label for = "foodMon">Food: </label>
+                <input type = "number" step = "0.01" id = "foodMon" placeholder="$0.00"><br>
+                <label for = "miscMon">Miscellaneous: </label>
+                <input type = "number" step = "0.01" id = "miscMon" placeholder="$0.00"><br>
+              </div>
+              
+              
+              <div class = "subcontainer">
+                <label class = "title">Tuesday</label><br>
+                <label for = "allowanceTues">Allowance: </label>
+                <input type = "number" step = "0.01" id = "allowanceTues" placeholder="$0.00"><br>
+                <label for = "transportTues">Transport: </label>
+                <input type = "number" step = "0.01" id = "transportTues" placeholder="$0.00"><br>
+                <label for = "foodTues">Food: </label>
+                <input type = "number" step = "0.01" id = "foodTues" placeholder="$0.00"><br>
+                <label for = "miscTues">Miscellaneous: </label>
+                <input type = "number" step = "0.01" id = "miscTues" placeholder="$0.00"><br>
+              </div>
+  
+              <div class = "subcontainer">
+                <label class = "title">Wednesday</label><br>
+                <label for = "allowanceWed">Allowance: </label>
+                <input type = "number" step = "0.01" id = "allowanceWed" placeholder="$0.00"><br>
+                <label for = "transportWed">Transport: </label>
+                <input type = "number" step = "0.01" id = "transportWed" placeholder="$0.00"><br>
+                <label for = "foodWed">Food: </label>
+                <input type = "number" step = "0.01" id = "foodWed" placeholder="$0.00"><br>
+                <label for = "miscWed">Miscellaneous: </label>
+                <input type = "number" step = "0.01" id = "miscWed" placeholder="$0.00"><br>
+              </div>
+            </div>
+           
+            <div class="secondcontainer">
+              <div class = "subcontainer">
+                <label class = "title">Thursday</label><br>
+                <label for = "allowanceThu">Allowance: </label>
+                <input type = "number" step = "0.01" id = "allowanceThu" placeholder="$0.00"><br>
+                <label for = "transportThu">Transport: </label>
+                <input type = "number" step = "0.01" id = "transportThu" placeholder="$0.00"><br>
+                <label for = "foodThu">Food: </label>
+                <input type = "number" step = "0.01" id = "foodThu" placeholder="$0.00"><br>
+                <label for = "miscThu">Miscellaneous: </label>
+                <input type = "number" step = "0.01" id = "miscThu" placeholder="$0.00"><br>
+              </div>
+
+              <div class = "subcontainer">
+                <label class = "title">Friday</label><br>
+                <label for = "allowanceFri">Allowance: </label>
+                <input type = "number" step = "0.01" id = "allowanceFri" placeholder="$0.00"><br>
+                <label for = "transportFri">Transport: </label>
+                <input type = "number" step = "0.01" id = "transportFri" placeholder="$0.00"><br>
+                <label for = "foodFri">Food: </label>
+                <input type = "number" step = "0.01" id = "foodFri" placeholder="$0.00"><br>
+                <label for = "miscFri">Miscellaneous: </label>
+                <input type = "number" step = "0.01" id = "miscFri" placeholder="$0.00"><br>
+              </div>
+
+              </div>
+
+                <div class = "thirdcontainer">
+                  <label class = "title">Choose your chart</label><br>
+                  <select id = "chartType">
+                    <option value = "PieChart">Pie Chart</option>
+                    <option value = "BarChart">Bar Chart</option>
+                    <option value = "ColumnChart">Column Chart</option>
+                  </select><br>
+                  <button type = "submit" value = "Submit">Submit</button><br>
+                </div>
+              
+           
+          </form>
         <div id = "chart" class = "chartdiv"></div>
         <script src ="script.js"></script>
     </body>

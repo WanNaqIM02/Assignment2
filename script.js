@@ -55,7 +55,27 @@ function drawChart(){
     chart.draw(data , options);
 }
 
-function toggleDarkMode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
-  }
+function setTheme(themeName){
+    localStorage.setItem('theme',themeName);
+
+    document.documentElement.className = themeName;
+}
+
+function switchTheme(){
+    if(localStorage.getItem('theme') === 'theme-light'){
+        setTheme('theme-dark');
+    }
+    else{
+        setTheme('theme-light');
+    }
+}
+
+(function () {
+    if (localStorage.getItem('theme') === 'theme-dark') {
+        setTheme('theme-dark');
+        document.getElementById('slider').checked = true;
+    } else {
+        setTheme('theme-light');
+      document.getElementById('slider').checked = false;
+    }
+})();

@@ -51,7 +51,7 @@ body{
 }
 .chartdiv{
    display: flex;
-   width: 1080px;
+   width: auto;
    margin: auto;
    justify-content: center;
 }
@@ -271,8 +271,4 @@ input:checked + .slider:before {
         width: auto;
     }
 
-    .chartdiv{
-        width: auto;
-    }
-   
 }

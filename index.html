@@ -12,7 +12,10 @@
         
         
         <div class = "header">
-          <a>History</a>
+          <div>
+            <label>Target Savings: </label>
+            <input type = "number" step = "0.01" id = "target" placeholder="$0.00">
+          </div>
           <div class = "switch container">
           <p>Toggle theme</p>
           <label id="switch" class="switch">
@@ -95,12 +98,19 @@
                     <option value = "BarChart">Bar Chart</option>
                     <option value = "ColumnChart">Column Chart</option>
                   </select><br>
+
                   <button type = "submit" value = "Submit">Submit</button><br>
                 </div>
               
            
           </form>
-        <div id = "chart" class = "chartdiv"></div>
+        <div class = "stats">
+          <label class = "title">Statistics</label><br>
+          <div id = "chart" class = "chartdiv"></div>
+          <p id = "average"></p>
+          <p id = "remainder"></p>
+        </div>
+        
         <script src ="script.js"></script>
     </body>
     

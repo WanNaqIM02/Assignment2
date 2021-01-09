@@ -23,11 +23,13 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--div-color);
     margin: auto;
     width: auto;
     padding: 1em;
     font-size: 30px;
+    border-radius: 10px;
 }
 
 .switch.container{
@@ -49,8 +51,7 @@ body{
 }
 .chartdiv{
    display: flex;
-   width: 1500px;
-   border-radius: 10px;
+   width: 1080px;
    margin: auto;
    justify-content: center;
 }
@@ -112,6 +113,23 @@ body{
     padding: 0.5em;
 }
 
+.stats{
+    display: flex;
+    border-radius: 10px;
+    background-color: var(--div-color);
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    width: 1280px;
+    height: auto;
+    margin:auto;
+    margin-top: 1em;
+    margin-bottom:1em;
+    padding: 0.5em;
+}
+
 input[type= number], textarea, select{
     width: 25%;
     padding: 12px;
@@ -127,7 +145,7 @@ input[type= number], textarea, select{
 }
 
 button{
-    width: 20%;
+    width: auto;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -142,7 +160,7 @@ input{
 }
 
 select{
-    width: 60%;
+    width: auto;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -221,4 +239,40 @@ input:checked + .slider:before {
 }
   
 
+@media(max-width: 800px){
+    .firstcontainer{
+        flex-direction: column;
+        width: auto;
+        justify-content: space-between;
+        gap: 5em;
+    }
 
+    .secondcontainer{
+        flex-direction: column;
+        width: auto;
+        justify-content: space-between;
+        gap: 5em;
+    }
+
+    .header{
+        justify-content: center;
+        gap: 1em;
+    }
+
+    .switch.container{
+        width:auto;
+    }
+
+    .thirdcontainer{
+        width: auto;
+    }
+
+    .stats{
+        width: auto;
+    }
+
+    .chartdiv{
+        width: auto;
+    }
+   
+}

@@ -176,6 +176,7 @@ select{
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    margin: auto;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;

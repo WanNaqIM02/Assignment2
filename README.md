@@ -16,7 +16,7 @@ even children to enable them to plan their budget efficiently. Hence, the websit
 ### User Stories
 ---
 * As an user, the inputs should accept numbers so that any character other than a number I mistyped does not appear in the input.
-* As an user, I wan to be able to choose the type of charts i want my result to be displayed in.
+* As an user, I want to be able to choose the type of charts i want my result to be displayed in.
 * As an user, I want my preferences and inputs to be saved when the website loads.
 * As an user, I want to be able to remove my saved inputs and reset my inputs.
 

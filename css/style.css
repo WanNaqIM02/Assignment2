@@ -156,7 +156,7 @@ input[type= number], textarea, select{
 }
 
 button{
-    width: auto;
+    width: 10%;
     padding: 10px 20px;
     border: none;
     border-radius: 10px;
@@ -171,7 +171,7 @@ input{
 }
 
 select{
-    width: auto;
+    width: 80%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -270,23 +270,15 @@ input:checked + .slider:before {
         gap: 1em;
     }
 
-    .switch.container{
-        width:auto;
-    }
-
-    .thirdcontainer{
-        width: auto;
-    }
-
-    .stats{
-        width: auto;
-    }
-
     .chartdiv{
         width: 400px;
     }
     .target.container{
         width: 400px;
+    }
+
+    select , button, .switch.container, .thirdcontainer,.stats {
+        width: auto;
     }
 
 }

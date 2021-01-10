@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang ="en">
     <head>
-        <meta charset="utf-8"/>
-        <title>Savings Calculator</title>
-        <link href="style.css" rel = "stylesheet" />
-        <script type = "text/javascript"src="https://www.gstatic.com/charts/loader.js"></script>
-        
+      <meta charset="utf-8"/>
+      <title>Savings Calculator</title> <!--Title of webpage -->
+      <link  href= "css\normalize.css" rel="stylesheet" >
+      <link href="css\style.css" rel = "stylesheet" /> <!-- Links my external styling sheet -->
+      <script type = "text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> <!--Loads my Google Chart API from the url -->
+      <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Source of my custom fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500;600&display=swap" rel="stylesheet"> <!-- Link of custom fonts used for my website -->
     </head>
+
     <body>
-        <h1 class= "maintitle">Check your savings!</h1>
-        
-        
-        <div class = "header">
-          <div>
-            <label>Target Savings: </label>
-            <input type = "number" step = "0.01" id = "target" placeholder="$0.00">
+        <h1 class= "maintitle">Check your savings!</h1> <!-- Page Main Title -->
+        <div class = "header"> <!-- Contains input for user's target saving and toggle for user's preferred theme -->
+          <div class = "target container">
+            <label>Target Savings: </label> <!-- Input for user's target savings -->
+            <input type = "number" step = "0.01" id = "target" placeholder="$0.00"  onfocus="this.value = ''">
           </div>
-          <div class = "switch container">
+          <div class = "switch container"> <!-- Theme switch toggle -->
           <p>Toggle theme</p>
           <label id="switch" class="switch">
             <input type="checkbox" onchange="switchTheme()" id="slider">
@@ -25,42 +26,43 @@
           </div>
         </div>
           <form id = "form1" onsubmit="drawChart(); return false">
-            <div class = "firstcontainer">
-              <div class = "subcontainer">
+            <div class = "firstcontainer"> <!-- Container for first three days of the week -->
+              
+              <div class = "subcontainer"> <!-- Contains input for Monday's input -->
                 <label class = "title">Monday</label><br>
                 <label for = "allowanceMon">Allowance: </label>
-                <input type = "number" step = "0.01" id = "allowanceMon" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "allowanceMon" placeholder="$0.00" onfocus="this.value = ''"><br> <!-- Input for total allowance received on Monday. Accepts only float as input -->
                 <label for = "transportMon">Transport: </label>
-                <input type = "number" step = "0.01" id = "transportMon" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "transportMon" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent on transport  on Monday. Accepts only float as input -->
                 <label for = "foodMon">Food: </label>
-                <input type = "number" step = "0.01" id = "foodMon" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "foodMon" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for for money spent on food on Monday. Accepts only float as input -->
                 <label for = "miscMon">Miscellaneous: </label>
-                <input type = "number" step = "0.01" id = "miscMon" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "miscMon" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent for miscellaneous items on Monday. Accepts only float as input -->
               </div>
               
               
               <div class = "subcontainer">
                 <label class = "title">Tuesday</label><br>
                 <label for = "allowanceTues">Allowance: </label>
-                <input type = "number" step = "0.01" id = "allowanceTues" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "allowanceTues" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for total allowance received on Tuesday. Accepts only float as input -->
                 <label for = "transportTues">Transport: </label>
-                <input type = "number" step = "0.01" id = "transportTues" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "transportTues" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input  for money spent on transport on Tuesday. Accepts only float as input -->
                 <label for = "foodTues">Food: </label>
-                <input type = "number" step = "0.01" id = "foodTues" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "foodTues" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent on food on Tuesday. Accepts only float as input -->
                 <label for = "miscTues">Miscellaneous: </label>
-                <input type = "number" step = "0.01" id = "miscTues" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "miscTues" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent for miscellaneous items on Tuesday. Accepts only float as input -->
               </div>
   
               <div class = "subcontainer">
                 <label class = "title">Wednesday</label><br>
                 <label for = "allowanceWed">Allowance: </label>
-                <input type = "number" step = "0.01" id = "allowanceWed" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "allowanceWed" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for total allowance received on Wednesday. Accepts only float as input -->
                 <label for = "transportWed">Transport: </label>
-                <input type = "number" step = "0.01" id = "transportWed" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "transportWed" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent on transport on Wednesday. Accepts only float as input -->
                 <label for = "foodWed">Food: </label>
-                <input type = "number" step = "0.01" id = "foodWed" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "foodWed" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent on food on Wednesday. Accepts only float as input -->
                 <label for = "miscWed">Miscellaneous: </label>
-                <input type = "number" step = "0.01" id = "miscWed" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "miscWed" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent for miscellaneous items on Wednesday. Accepts only float as input -->
               </div>
             </div>
            
@@ -68,50 +70,54 @@
               <div class = "subcontainer">
                 <label class = "title">Thursday</label><br>
                 <label for = "allowanceThu">Allowance: </label>
-                <input type = "number" step = "0.01" id = "allowanceThu" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "allowanceThu" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for total allowance received on Thursday. Accepts only float as input -->
                 <label for = "transportThu">Transport: </label>
-                <input type = "number" step = "0.01" id = "transportThu" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "transportThu" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input money spent on transport on Thursday . Accepts only float as input -->
                 <label for = "foodThu">Food: </label>
-                <input type = "number" step = "0.01" id = "foodThu" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "foodThu" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent on food on Thursday. Accepts only float as input -->
                 <label for = "miscThu">Miscellaneous: </label>
-                <input type = "number" step = "0.01" id = "miscThu" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "miscThu" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent for miscellaneous items on Thursday. Accepts only float as input -->
               </div>
 
               <div class = "subcontainer">
                 <label class = "title">Friday</label><br>
                 <label for = "allowanceFri">Allowance: </label>
-                <input type = "number" step = "0.01" id = "allowanceFri" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "allowanceFri" placeholder="$0.00" onfocus="this.value = ''"><br> <!-- Input for total allowance received on Friday. Accepts only float as input -->
                 <label for = "transportFri">Transport: </label>
-                <input type = "number" step = "0.01" id = "transportFri" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "transportFri" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent on transport on Friday. Accepts only float as input -->
                 <label for = "foodFri">Food: </label>
-                <input type = "number" step = "0.01" id = "foodFri" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "foodFri" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for for money spent on food on Friday. Accepts only float as input -->
                 <label for = "miscFri">Miscellaneous: </label>
-                <input type = "number" step = "0.01" id = "miscFri" placeholder="$0.00"><br>
+                <input type = "number" step = "0.01" id = "miscFri" placeholder="$0.00"  onfocus="this.value = ''"><br> <!-- Input for money spent for miscellaneous items on Friday. Accepts only float as input -->
               </div>
 
               </div>
 
-                <div class = "thirdcontainer">
+                <div class = "thirdcontainer"> <!-- Contains type of charts dropdown -->
                   <label class = "title">Choose your chart</label><br>
-                  <select id = "chartType">
+                  <select id = "chartType" onchange="drawChart()"> <!-- Type of charts dropdown-->
+                    <option value="null" disabled selected > None selected</option>
                     <option value = "PieChart">Pie Chart</option>
                     <option value = "BarChart">Bar Chart</option>
                     <option value = "ColumnChart">Column Chart</option>
                   </select><br>
 
-                  <button type = "submit" value = "Submit">Submit</button><br>
                 </div>
               
            
           </form>
         <div class = "stats">
-          <label class = "title">Statistics</label><br>
+          <label class = "title">Statistics</label><br> <!-- Displays statistics such average savings and whether the user has acheived their target savings -->
           <div id = "chart" class = "chartdiv"></div>
           <p id = "average"></p>
           <p id = "remainder"></p>
         </div>
+
+        <div class = "reset button container">
+          <button type ="button" onclick="Reset()">Reset</button> <!-- Clears all user input and user input saved in the local storage -->
+        </div>
         
-        <script src ="script.js"></script>
+        <script src ="javascript\script.js"></script> <!-- Link to my external javascript script -->
     </body>
     
 </html>

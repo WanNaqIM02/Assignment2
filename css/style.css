@@ -29,9 +29,13 @@ body{
     width: auto;
     padding: 1em;
     font-size: 30px;
+    font-family: 'Roboto Slab', serif;
     border-radius: 10px;
 }
 
+.target.container{
+    width: 500px;
+}
 .switch.container{
     display: flex;
     justify-content: space-evenly;
@@ -42,7 +46,7 @@ body{
 }
 
 .maintitle{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 50px;
     text-align: center;
 }
@@ -51,7 +55,7 @@ body{
 }
 .chartdiv{
    display: flex;
-   width: auto;
+   width: 1080px;
    margin: auto;
    justify-content: center;
 }
@@ -89,7 +93,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     width: 1280px;
     height: auto;
@@ -105,7 +109,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     width: 400px;
     height: auto;
@@ -120,7 +124,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     width: 1280px;
     height: auto;
@@ -130,8 +134,15 @@ body{
     padding: 0.5em;
 }
 
+.reset.button.container{
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+
 input[type= number], textarea, select{
-    width: 25%;
+    width: 30%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -140,7 +151,7 @@ input[type= number], textarea, select{
     margin-top: 1px;
     margin-bottom: 10px;
     resize: vertical;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: 1em;
 }
 
@@ -150,7 +161,7 @@ button{
     border: none;
     border-radius: 10px;
     cursor:pointer;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Slab', serif;
     font-size: large;
     margin: auto;
 }
@@ -269,6 +280,13 @@ input:checked + .slider:before {
 
     .stats{
         width: auto;
+    }
+
+    .chartdiv{
+        width: 400px;
+    }
+    .target.container{
+        width: 400px;
     }
 
 }

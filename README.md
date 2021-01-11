@@ -22,7 +22,7 @@ even children to enable them to plan their budget efficiently. Hence, the websit
 
 ### Wireframe
 ---
-[My wireframe](/wireframes/Assg2wireframes.pdf)
+[My wireframe](/wireframes/Assg2wireframe.pdf)
 
 ## Features
 ---

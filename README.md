@@ -80,5 +80,5 @@ even children to enable them to plan their budget efficiently. Hence, the websit
 * [Toggle between theme function](https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2)
 * [Allow google charts to use input as data](https://codeactually.com/googlecharts.html)
 * [How to utilize localStorage](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
-* [StackOverflow] (https://stackoverflow.com/questions/32458437/typeerror-google-visualization-datatable-is-not-a-constructor/32459785)
-* [W3sSchools on stringifying variables using JSON] (https://www.w3schools.com/js/js_json_stringify.asp)
+* [StackOverflow](https://stackoverflow.com/questions/32458437/typeerror-google-visualization-datatable-is-not-a-constructor/32459785)
+* [W3sSchools on stringifying variables using JSON](https://www.w3schools.com/js/js_json_stringify.asp)

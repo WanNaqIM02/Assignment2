@@ -43,4 +43,42 @@ even children to enable them to plan their budget efficiently. Hence, the websit
 * localStorage
 * [Google Charts API](https://developers.google.com/chart)
 
+### Languages
+---
+* JavaScript
+* HTML
+* CSS
 
+## Testing
+1. Google Chart API
+    1. Try to display the charts with all the input fields filled.
+    2. Try to display the charts without all the input fields filled.
+    3. Try to display the charts with one or more input fields not filled.
+    
+2. localStorage
+    1. Try to view the stored user input in the localStorage when all input fields are filled.
+    2. Try to view the stored user input in the localStorage when all input fields are not filled.
+    3. Try to view the stored user input in the localStorage when one or more input fields are not filled.
+    4. Try to view the stored user input in the localStorage when all input fields are resetted.
+    5. Try to view the stored user input in the localStorage when page is reloaded.   
+
+### Responsiveness & view on different browsers
+---
+* Flexboxes of respective displays a becomes a column when page resizes to a mobile resolution.
+* Normalize.css used so the elements of the html becomes uniform on all browsers.
+
+### Bugs encountered
+---
+* Value of average savings displayed as null when page is reloaded.
+* Margins of various elements is not uniform.
+* Google Chart variable is not constructor javascript error encounterred when the various charts such as bar amd column charts are not loaded with the API.
+
+## Credit
+
+### Acknowledgement
+---
+* [Toggle between theme function](https://medium.com/@haxzie/dark-and-light-theme-switcher-using-css-variables-and-pure-javascript-zocada-dd0059d72fa2)
+* [Allow google charts to use input as data](https://codeactually.com/googlecharts.html)
+* [How to utilize localStorage](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
+* [StackOverflow] (https://stackoverflow.com/questions/32458437/typeerror-google-visualization-datatable-is-not-a-constructor/32459785)
+* [W3sSchools on stringifying variables using JSON] (https://www.w3schools.com/js/js_json_stringify.asp)

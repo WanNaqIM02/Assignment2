@@ -1,5 +1,5 @@
 # Saving Calculator
-----
+
 This project of mine is create a weekly savings calculator. Hence, allows the user to input their expenses,
 store and retrieve them accordingly. Then once the website obtains the user's input, it would calculate it and
 displat the result as a chart and outputs them info on how much more to save, whether they have reached their target 
@@ -7,7 +7,7 @@ or how much in excess savings they have. They are also able to choose the type c
 in.
 
 ## Design Process
----
+
 ### User
 ---
 Hence, the website is intended to be intuitive to anyone. Therefore, this website can be utilised by working adults, students or 
@@ -35,3 +35,12 @@ even children to enable them to plan their budget efficiently. Hence, the websit
 ### Features left to implement
 ---
 * A localStorage item to store the user's input history
+
+## Technologies Used
+
+### APIs
+---
+* localStorage
+* [Google Charts API](https://developers.google.com/chart)
+
+

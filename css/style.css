@@ -268,6 +268,7 @@ input:checked + .slider:before {
 
     .header{
         flex-direction: column;
+        width: auto;
         justify-content: center;
         gap: 1em;
     }

@@ -267,6 +267,7 @@ input:checked + .slider:before {
     }
 
     .header{
+        flex-direction: column;
         justify-content: center;
         gap: 1em;
     }

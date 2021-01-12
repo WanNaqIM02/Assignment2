@@ -251,7 +251,7 @@ input:checked + .slider:before {
 }
   
 
-@media(max-width: 800px){
+@media(max-width: 1200px){
     .firstcontainer{
         flex-direction: column;
         width: auto;
